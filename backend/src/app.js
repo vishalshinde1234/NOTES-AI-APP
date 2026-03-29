@@ -11,7 +11,11 @@ const app = express();
 
 app.use(helmet());
 app.use(cors({
-  origin: ['http://localhost:5173', 'http://localhost:3000'],
+  origin: [
+    'http://localhost:5173',
+    'http://localhost:3000',
+    'https://notes-ai-app-tan.vercel.app' // yeh line add ki hai
+  ],
   credentials: true
 }));
 app.use(express.json({ limit: '2mb' }));
