@@ -3,7 +3,7 @@ const router = express.Router();
 const { generateNote, summarizeNote, improveNote, makeBullets } = require('../controllers/aiController');
 const { protect } = require('../middleware/auth');
 
-router.use(protect);
+
 router.post('/generate', generateNote);
 router.post('/summarize', summarizeNote);
 router.post('/improve', improveNote);
