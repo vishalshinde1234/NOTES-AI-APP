@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const api = axios.create({
-  baseURL: 'http://localhost:5001/api',
+  baseURL: 'http://notes-ai-back.onrender.com/api/ai/generate',
 })
 
 api.interceptors.request.use((config) => {
